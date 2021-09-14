@@ -1,19 +1,33 @@
 {% extends 'base.html' %}
+
 {% load static %}
-{% block css_style %} <link rel="stylesheet" href="{% static "blog/CSS/post.css" %}"> {% endblock  %}
+
+{% block css_style %}
+    {% static "blog/CSS/post.css" %}
+{% endblock  %}
+
 {% block conteudo %}
 <section class="titulo">
+
     <div class="nome-titulo">
         <h1>{{titulo}}</h1>
     </div>
+
     <div class="info">
-    <img  class="img-titulo" src="{% static img %}" alt="capa">
-    <blockquote>
-        <p>By <span>{{ autor }}</span></p>
-        <p>last update <span> {{data}} </span></p>
-    </blockquote></div>
+       <div img='imgg'>
+        <img  class="img-titulo" src="{% static img %}" alt="capa">
+       </div>
+    
+        <blockquote>
+            <p>By <span>{{ autor }}</span></p>
+            <p>last update <span> {{data}} </span></p>
+        </blockquote>
+    </div>
+
 </section>
+
 <section class="texto">
     <p>{{ texto}}</p>
 </section>
+
 {% endblock  %}

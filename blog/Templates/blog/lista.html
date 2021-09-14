@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css_style %} 
+    {% static 'blog/CSS/lista.css' %}
+ {% endblock  %}
+
+{% block conteudo  %}
+
+<main class="bloco" >
+
+<h1>meus posts</h1>
+     <section class="card-holder">
+
+    {% for i in teste  %}
+   
+    
+        <a class="ks" href="{% url 'pagina-post' forloop.counter	 %}">
+            <div class="card">
+              
+                <div class="imgg">
+                    <img src="{% static i.1 %} " alt=""> 
+                </div>
+                <h3>{{i.0}}</h3>
+                <p> {{i.4}} </p>
+               
+            </div>
+         </a>
+       
+    {% endfor %}
+     </section>
+</main>
+
+{% endblock conteudo  %}

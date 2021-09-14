@@ -9,6 +9,7 @@ html, body{
     background: #39507D;
     display: flex;
     align-items: center;
+    
 }
 
 .nav-bar{
@@ -26,7 +27,7 @@ li{
     list-style-type: none;
 }
 
-a{
+.link{
     font-size: 26px;
     font-weight: bold;
     color: white;

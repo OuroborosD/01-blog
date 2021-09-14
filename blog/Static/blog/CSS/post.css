@@ -12,10 +12,21 @@
     text-transform: capitalize;
 }
 
+.main{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.imgg{
+    height: 140px;
+    width: 130px;
+    background: #39507D;
+}
+
 .img-titulo{
     height: 130px;
     width: 120px;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .nome-titulo{
@@ -39,7 +50,7 @@ span{
 .texto{
     width: 70%;
     margin: 20px auto;
-    background: rgb(248, 246, 246);;
+    background: rgb(248, 246, 246);
     box-sizing: border-box;
     padding: 50px;
     border-radius: 30px;
